@@ -3,7 +3,7 @@ from model.Cinema import Cinema
 
 class Serie(Cinema):
 
-    def __int__(self, nome, ano, temporadas):
+    def __init__(self, nome, ano, temporadas):
         super().__init__(nome, ano)
         self._temporadas = temporadas
 
@@ -11,10 +11,10 @@ class Serie(Cinema):
     def duracao(self):
         return self._temporadas
 
-    @duracao.setter
-    def duracao(self, nova_temporadas):
-        self._temporadas = nova_temporadas
+    @temporadas.setter
+    def temporadas(self, nova_temporada):
+        self._temporadas = nova_temporada
 
     def imprime(self):
-        return print(f'nome da serie: {self.nome} - ano: {self.ano}'
-                     f' - temporadas: {self.temporadas}min - likes: {self.likes}')
+        return print(f'nome da série: {self.nome} - ano: {self.ano}'
+                     f' - temporadas: {self.temporadas} - likes: {self.likes}')

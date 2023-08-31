@@ -3,9 +3,9 @@ from model.Cinema import Cinema
 
 class Filme(Cinema):
 
-    def __int__(self, nome, ano, duracao):
+    def __init__(self, nome, ano, duracao):
         super().__init__(nome, ano)
-        self._duracao = duracao
+        self.duracao = duracao
 
     @property
     def duracao(self):
