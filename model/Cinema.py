@@ -1,6 +1,6 @@
 class Cinema:
 
-    def __init__(self,nome, ano):
+    def __init__(self, nome, ano):
         self._nome = nome.title()
         self._ano = ano
         self._likes = 0
@@ -24,3 +24,6 @@ class Cinema:
     @property
     def likes(self):
         return self._likes
+
+    def dar_likes(self, novo_like):
+        self._likes = + novo_like
